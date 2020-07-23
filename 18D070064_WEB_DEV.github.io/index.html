@@ -6,21 +6,48 @@ About me
 </title>
 <meta charset="utf-8">
 <meta name="author" content="Chris Mills">
-<link rel="shortcut icon" href="https://drive.google.com/file/d/1JwiSrSvEpK1jXLhedY9DatdSVdf3bIsl/view?usp=sharing" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
 </head>
 <body>
-<ul class='ham'>
-  <li><a href="#Home">My home page</a></li>
-  <li><a href="#Education">Courses Taken</a></li>
-  <li><a href="#Hobby">My hobbies</a></li>
-  <li><a href="#Ambition">Ambition</a></li>
-</ul>
-<h1 class="sloka"><center><b>आ नो भद्राः क्रतवोऽयन्तु विश्वतोऽदब्धासो</b></center><h1>
-<h2 class='meaning'><i><center>May the beneficial thoughts come towards us from all the directions unhindered!</center></i><h2>
-<div id="Home"></div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<form class="form-inline">
+		<button class="btn btn-outline-success" type="button"><a href="#about">About Me</a></button>
+		<button class="btn btn-outline-success" type="button"><a href="#Education">Education</a></button>
 
+			<button class="btn btn-outline-success" type="button"><a href="#Blog">Blog</a></button>
+	    <button class="btn btn-outline-success" type="button"><a href="#contact">Contact and more</a></button>
+	  </form>
+</nav>
+
+<div class="jumbotron text-center">
+      <div class="container">
+        <h1>ॐ सह नाववतु ।<br>
+सह नौ भुनक्तु ।
+सह वीर्यं करवावहै ।<br>
+तेजस्वि नावधीतमस्तु मा विद्विषावहै ।
+</h1>
+        <p>May he protect us both together<br>
+				May he possess us both together,
+			May we attain vigor together<br>
+		May what we study together be invigorating,
+	May we never cavil at each other</p>
+        <a href="https://www.youtube.com/watch?v=MfyQ-LdWGpM" class="btn btn-primary">A beautiful melody, I suspect by Pandit Ravishankar and George Harrison</a>
+      </div>
+    </div>
+<div id="Home"></div>
+<!-- <script>
+let message;
+message = 'Wecome!';
+
+alert(message);
+</script> -->
 <h2>My home page</h2>
+<a name="about"</a>
 <p> Hi My name is Shlok Vaibhav Singh, I am a second-year undergraduate in <b>EE IITB</b>. I know I am very old to take this course but still I am taking it.
 <p>And this is not an image of me, it is where I live:</p>
 <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/330px-The_Earth_seen_from_Apollo_17.jpg" alt="Earth it is, if you can't see it here, see beneath you">
@@ -30,12 +57,15 @@ About me
 <h3>
 <div id="Education"></div>
 
-<center>Education</center></h3>
+<center><a name="Education">Education</a></center></h3>
 
 <center>
+<button onclick="alert('Hello World')">Click Me</button>
+
 <br>here is the table of courses I have taken:</br>
 </center>
 <center>
+	<div class='container'>
 <table style="width:100%" border="1|0">
 <colgroup>
     <col span="2" style="background-color:beige">
@@ -113,6 +143,7 @@ About me
   </tr>
 </table>
 </center>
+</div>
 <br>
 <hr>
 <div id="Hobby"></div>
@@ -120,10 +151,69 @@ About me
 <h3><center>My Hobbies</center></h3>
 <center>I like to subscribe to youtube channels and learn languages, 我喜欢学习语言! (because of utf-8 encoding in this index)</center>
 <hr>
-<div>Hi this is a division. I don't know what it is for?</div>
-<div id="Ambition"></div>
+<h3><center><a name="Blog">Blog</a></center></h3>
+<h4 class="lead" ><center>E-Notes</center></h4>
+<div class='.container'>
+<div class='row'>
+	<div class='col-md-3'><center>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHXFK3plr6UdzXHzQUoXOUI48dpk3k2CBg3g&usqp=CAU" alt="Not available" class="img-thumbnail">
+</center></div>
 
-<h3><center>My ambitions</center></h3>
-<center>To learn touch-typing with a speed of 150WPM</center>
+<div class='col-md-9'>
+<p> I am very forgetful, so I need to make a lot of notes,
+	 all the same, I was also very slow at typing, so handwritten
+	 notes were my only tool, but this lockdown has shown us the
+	  advantage of online over offline. So I have decided to shift to
+		 e-note taking for atleast one course the coming sem, in case
+	it commences. Now, how did I prepare? - I used <a href="https://castel.dev/post/lecture-notes-1/">this blog</a> as
+my basic guide. So first prerequisite was to touch-type at atleast 70-80WPM.
+I started to learn touch-typing in beginning of June casually
+my current speed has improved to 50WPM with >95% accuracy and I
+am confident it will attain the desired threshold of 70-80WPM within 1 month
+</p>
+<p>
+	Coming to softwares, it was clear that fancy things like evernote and onenote won't work
+	some coding support is needed. So I configured Vim plugins in WSL as shown by Gilles in his blog.
+	However, for figures, being in electrical engineering, I looked for some latex support for circuit
+	diagrams, luckily, I found <a href="http://texdoc.net/texmf-dist/doc/latex/circuitikz/circuitikzmanual.pdf">circuitikz package</a> which can be used to insert circuits in diagram
+	Next, as engineering students, we also need to make lots of parametric plots, for this, I have decided to use MatLab and
+	Wolfram Mathematica for quality and interactive plots, I know this will increase time, but I will get quality interactive plot
+	compared to static hand-made plot with axes inclined at 45&#176.
+</p>
+I hope this endeavour is viable
+</div>
+</div></div>
+<h3><center><a name="contact">Contact and more</a></h3>
+<div class="row">
+	<div class="col-md-3">
+		<div class="container"><center>
+			<p class='lead'>Presence on other places</p>
+			<ul class='list-unstyled'>
+				<li><button class="btn btn-link"><a href="https://github.com/ShlokVaibhav">GitHub</a></button></li>
+<li><button class="btn btn-link"><a href="http://home.iitb.ac.in/~shlok_vaibhav/">Official Homepage</a></button></li>
+</ul></center>
+
+		</div>
+	</div>
+	<div class='col-md-9'>
+	<form action="https://formspree.io/xyynlgye" method="POST" >
+		<div class="form-group">
+		          <label>Name</label>
+		          <input type="text" class="form-control" placeholder="Add Name">
+		        </div>
+
+		        <div class="form-group">
+		          <label>Email</label>
+		          <input type="email" class="form-control" placeholder="Add Email" name="_replyto">
+		        </div>	<div class="form-group">
+          <label>Message</label>
+          <textarea class="form-control" placeholder="Add Message"></textarea>
+        </div>
+  <input type="submit" value="Send">
+  </form>
+  </div>
+</div>
+
+</div>
 </body>
 </html>

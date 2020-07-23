@@ -2,28 +2,27 @@
   from {background-color: #1F618D;}
   to {background-color: #EBF5FB;}
 }
-ul.ham {
+
+/* ul.ham {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 ul.ham li{
   display:inline;
-}
+} */
 
-body {  margin-top: 5px;
+/* body {  margin-top: 5px;
   margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 150px;
+  margin-left: 150px;
   background-color: azure
-}
+} */
 p{
   font-family: Georgia;
 }
-li {
-  list-style-type: square;
-}
-a:link{
+
+/* a:link{
   color:blue
 }
 a:visited{
@@ -35,7 +34,7 @@ a:hover{
     text-decoration: underline;
     text-shadow: 4px 4px 4px #1B4F72;
 
-}
+} */
 
 h1.sloka { text-shadow: 1px 1px;
   color:#1F618D;
@@ -75,4 +74,13 @@ th{  background-color: #F8F9F9;
 th:hover {
   background-color:#BDC3C7;
   font-size: 1.05rem
+}
+form{
+  height:10vh;
+  display:flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
