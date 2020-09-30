@@ -21,7 +21,9 @@ ul.ham li{
 p{
   font-family: Georgia;
 }
-
+th{
+  text-align: center;
+}
 /* a:link{
   color:blue
 }
